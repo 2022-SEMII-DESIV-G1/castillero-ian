@@ -1,11 +1,87 @@
-header{
-    display: flex;
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color: cornsilk;
 }
 
-logo{
+header{
     display: flex;
+    justify-content: space-between;
+    background-color: rgb(70, 92, 161);
+    min-height: 70px;
+    align-items: center;
+    padding: 10px;
+}
+
+.imgTitle{
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
 }
 
 .logo img{
-    height: 10px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 400;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: red;
+}
+
+.contenedor{
+    background: rgb(224, 223, 223);
+    height: 50vh;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 1000px;
+    margin-top: 50px;
+    margin-left: 40px;
+
+}
+
+.p-contenedor{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+h4{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.h3-lab{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+@media (max-width:1000px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+
+    .contenedor{
+        flex-direction: column;
+        
+
+    }
+
 }
